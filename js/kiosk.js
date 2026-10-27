@@ -258,7 +258,21 @@
     if (my < 0) S.vb.y -= my; if (my > f.height) S.vb.y -= (my - f.height);
   }
 
+  // Players (e.g. an Appspace card on BrightSign) often load the page while it is still hidden or 0×0.
+  // Remember the last requested framing and re-apply it once the map has a real size, or whenever it changes.
+  function sizeReady() { return svg.clientWidth > 50 && svg.clientHeight > 50; }
+  function refit() { if (S.lastFit) fitBounds.apply(null, S.lastFit); }
+  function watchSize() {
+    var w = svg.clientWidth, h = svg.clientHeight;
+    if (w !== S.lastW || h !== S.lastH) {
+      S.lastW = w; S.lastH = h;
+      if (sizeReady()) refit();
+    }
+  }
+
   function fitBounds(x0, y0, x1, y1, padPx) {
+    S.lastFit = [x0, y0, x1, y1, padPx];
+    if (!sizeReady()) return;          // not laid out yet: watchSize() applies it as soon as it is
     var c = containerSize();
     padPx = padPx || 80;
     // Leave room for the floor tabs / buttons overlaid on the map.
@@ -436,6 +450,7 @@
 
   // ------------------------------------------------------------------ animation loop
   function tick() {
+    watchSize();
     if (S.routePath && S.routeLen) {
       var k = unitsPerPx();
       var t = (Date.now() - S.routeStart) / 1000;
@@ -655,7 +670,9 @@
       document.addEventListener(ev, function () { S.lastTouch = Date.now(); }, true);
     });
     document.addEventListener('contextmenu', function (e) { e.preventDefault(); });
-    window.addEventListener('resize', function () { applyVB(); });
+    window.addEventListener('resize', watchSize);
+    document.addEventListener('visibilitychange', function () { if (!document.hidden) { S.lastW = -1; watchSize(); } });
+    if (window.ResizeObserver) new ResizeObserver(watchSize).observe(svg);
     wireMapGestures();
   }
 

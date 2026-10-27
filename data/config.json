@@ -1,11 +1,11 @@
 {
  "version": 1,
  "site": {
-  "name": "Demo Campus Wayfinding",
+  "name": "Stone Building Wayfinding",
   "subtitle": "Tap a destination to get directions",
   "accent": "#782F40",
   "accent2": "#CEB888",
-  "idleSeconds": 90,
+  "idleSeconds": 30,
   "refreshMinutes": 15,
   "defaultSign": "lobby-kiosk",
   "showRoomDots": true,
@@ -1194,6 +1194,23 @@
    "kind": "stairs",
    "group": "North Stairs",
    "label": ""
+  },
+  {
+   "id": "nv6717mr4",
+   "floor": "fqglo79ra",
+   "x": -518,
+   "y": 2213,
+   "type": "connector",
+   "kind": "stairs",
+   "group": "",
+   "label": ""
+  },
+  {
+   "id": "nv6717mz5",
+   "floor": "fqglo79ra",
+   "type": "waypoint",
+   "x": 542,
+   "y": 2206
   }
  ],
  "edges": [
@@ -1546,10 +1563,6 @@
    "b": "ntwkbxkn3"
   },
   {
-   "a": "ntt6ruq1h",
-   "b": "ntwb5urjx"
-  },
-  {
    "a": "nttls871z",
    "b": "ntwkbykxd"
   },
@@ -1728,7 +1741,19 @@
   {
    "a": "nu1dq3ja5",
    "b": "ntwifpqo7"
+  },
+  {
+   "a": "ntt6ruq1h",
+   "b": "nv6717mz5"
+  },
+  {
+   "a": "nv6717mz5",
+   "b": "ntwb5urjx"
+  },
+  {
+   "a": "nv6717mr4",
+   "b": "nv6717mz5"
   }
  ],
- "savedAt": "2026-10-27T15:20:36.744Z"
+ "savedAt": "2026-10-27T15:52:20.966Z"
 }
