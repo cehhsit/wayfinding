@@ -386,16 +386,56 @@
     S.floorId = fid;
     var img = $('floorImg');
     var url = imageUrl(f.image);
-    img.setAttributeNS(XLINK, 'xlink:href', url);
-    img.setAttribute('href', url);
     img.setAttribute('width', f.width);
     img.setAttribute('height', f.height);
+    if (img.getAttribute('data-src') !== url) {
+      img.setAttribute('data-src', url);
+      setFloorImage(img, url, fid);
+    }
     clearMarkers();
     drawRoomDots();
     if (S.route) drawRouteOnFloor(fid);
     if (S.sign && S.sign.floor === fid) drawYah(S.sign);
     renderFloorTabs();
     applyVB();
+  }
+
+  // Some player browsers (older BrightSign/Chromium builds inside Appspace) don't repaint an SVG <image>
+  // when it finishes loading, so the floorplan stays blank until the view changes (pan/zoom).
+  // Load the image fully first, then insert it and nudge the view so the player redraws.
+  function setFloorImage(img, url, fid) {
+    var apply = function () {
+      if (S.floorId !== fid) return;
+      img.setAttributeNS(XLINK, 'xlink:href', url);
+      img.setAttribute('href', url);
+      kickRepaint();
+    };
+    var pre = new Image();
+    pre.onload = function () {
+      if (pre.decode) pre.decode().then(apply, apply); else apply();
+    };
+    pre.onerror = apply;   // let the SVG try anyway
+    pre.src = url;
+    // Show it right away too where the browser can (cached / fast loads).
+    img.setAttributeNS(XLINK, 'xlink:href', url);
+    img.setAttribute('href', url);
+  }
+
+  // Force a redraw by changing the view by a hair and putting it back over the next few frames.
+  function kickRepaint() {
+    var nudge = function () {
+      var vb = S.vb, e = vb.w * 0.0005;
+      svg.setAttribute('viewBox', (vb.x + e) + ' ' + vb.y + ' ' + vb.w + ' ' + vb.h);
+      var im = $('floorImg');
+      im.setAttribute('opacity', '0.999');
+      requestAnimationFrame(function () {
+        requestAnimationFrame(function () { im.setAttribute('opacity', '1'); applyVB(); });
+      });
+    };
+    nudge();
+    setTimeout(nudge, 250);
+    setTimeout(nudge, 1000);
+    setTimeout(nudge, 3000);
   }
 
   function drawRouteOnFloor(fid) {
@@ -785,5 +825,8 @@
     start(cfg);
     startTimers();
     requestAnimationFrame(tick);
+    // belt and braces for players that finish laying out late
+    setTimeout(function () { S.lastW = -1; watchSize(); kickRepaint(); }, 1500);
+    setTimeout(function () { S.lastW = -1; watchSize(); kickRepaint(); }, 5000);
   }).catch(showError);
 })();
