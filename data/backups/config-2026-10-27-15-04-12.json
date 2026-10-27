@@ -1,0 +1,786 @@
+{
+ "version": 1,
+ "site": {
+  "name": "Demo Campus Wayfinding",
+  "subtitle": "Tap a destination to get directions",
+  "accent": "#782F40",
+  "accent2": "#CEB888",
+  "idleSeconds": 90,
+  "refreshMinutes": 15,
+  "defaultSign": "lobby-kiosk",
+  "showRoomDots": true,
+  "stairsFirst": true
+ },
+ "categories": [
+  {
+   "id": "office",
+   "name": "Offices",
+   "color": "#5B6C8F"
+  },
+  {
+   "id": "class",
+   "name": "Classrooms",
+   "color": "#2E7D6B"
+  },
+  {
+   "id": "lab",
+   "name": "Labs & Studios",
+   "color": "#8A5A9E"
+  },
+  {
+   "id": "service",
+   "name": "Student Services",
+   "color": "#C0602A"
+  },
+  {
+   "id": "amenity",
+   "name": "Amenities",
+   "color": "#2F7FB5"
+  },
+  {
+   "id": "entrance",
+   "name": "Entrances & Exits",
+   "color": "#6B7A3A"
+  }
+ ],
+ "floors": [
+  {
+   "id": "fqeuwbge1",
+   "name": "Ground Floor",
+   "building": "Stone Building",
+   "level": 0,
+   "image": "floors/stonegroundfl-reoriented-v92sxxfg.png",
+   "width": 4800,
+   "height": 4800,
+   "pxPerFt": 9.7521
+  },
+  {
+   "id": "fqfwvfaff",
+   "name": "1st Floor",
+   "building": "Stone Building",
+   "level": 1,
+   "image": "floors/floor-1-5dmeg757.png",
+   "width": 4800,
+   "height": 4800,
+   "pxPerFt": 8.4679
+  },
+  {
+   "id": "fqgczvnrv",
+   "name": "Floor 2",
+   "building": "",
+   "level": 2,
+   "image": "floors/floor-2-7jyzdbi8.png",
+   "width": 4800,
+   "height": 4800,
+   "pxPerFt": 0
+  },
+  {
+   "id": "fqglo79ra",
+   "name": "Floor 3",
+   "building": "",
+   "level": 3,
+   "image": "floors/floor-3-e1ui8lii.png",
+   "width": 4800,
+   "height": 4800,
+   "pxPerFt": 0
+  }
+ ],
+ "nodes": [
+  {
+   "id": "sign-1",
+   "floor": "fqfwvfaff",
+   "x": 1889,
+   "y": 2487,
+   "type": "sign",
+   "name": "Sign 1",
+   "heading": 0
+  },
+  {
+   "id": "nqjelz8kk",
+   "floor": "fqfwvfaff",
+   "x": 2284,
+   "y": 2484,
+   "type": "room",
+   "name": "ELPS Offices",
+   "number": "1204",
+   "category": "office"
+  },
+  {
+   "id": "nqjtrvg05",
+   "floor": "fqfwvfaff",
+   "x": 2887,
+   "y": 2478,
+   "type": "room",
+   "name": "ELPS Admin",
+   "number": "1210",
+   "category": "office"
+  },
+  {
+   "id": "nqks2v0k3",
+   "floor": "fqfwvfaff",
+   "x": 2187,
+   "y": 2580,
+   "type": "room",
+   "name": "Classroom",
+   "number": "1203",
+   "category": "class"
+  },
+  {
+   "id": "nql3q1snt",
+   "floor": "fqfwvfaff",
+   "x": 3068,
+   "y": 2606,
+   "type": "room",
+   "name": "Office of Research",
+   "number": "1208",
+   "category": "office"
+  },
+  {
+   "id": "nqlrczvui",
+   "floor": "fqfwvfaff",
+   "x": 1611,
+   "y": 2543,
+   "type": "room",
+   "name": "Learning Resource Center",
+   "number": "1301",
+   "category": "lab"
+  },
+  {
+   "id": "nqp6odyup",
+   "floor": "fqfwvfaff",
+   "x": 2874,
+   "y": 1535,
+   "type": "room",
+   "name": "Dean Suite",
+   "number": "1100",
+   "category": "office"
+  },
+  {
+   "id": "nqy6r31y8",
+   "floor": "fqfwvfaff",
+   "x": 1568,
+   "y": 3301,
+   "type": "room",
+   "name": "South Restroom",
+   "number": "",
+   "category": "amenity"
+  },
+  {
+   "id": "nqyvq27bw",
+   "floor": "fqfwvfaff",
+   "x": 3557,
+   "y": 2634,
+   "type": "room",
+   "name": "North Restroom",
+   "number": "",
+   "category": "amenity"
+  },
+  {
+   "id": "nqzpl4inu",
+   "floor": "fqfwvfaff",
+   "type": "waypoint",
+   "x": 1575,
+   "y": 3191
+  },
+  {
+   "id": "nqzt0l9it",
+   "floor": "fqfwvfaff",
+   "type": "waypoint",
+   "x": 1661,
+   "y": 3186
+  },
+  {
+   "id": "nqzuo787x",
+   "floor": "fqfwvfaff",
+   "type": "waypoint",
+   "x": 1664,
+   "y": 2543
+  },
+  {
+   "id": "nqzxadwxe",
+   "floor": "fqfwvfaff",
+   "type": "waypoint",
+   "x": 3435,
+   "y": 2543
+  },
+  {
+   "id": "nqzzv18d5",
+   "floor": "fqfwvfaff",
+   "type": "waypoint",
+   "x": 3436,
+   "y": 2641
+  },
+  {
+   "id": "nr051drg9",
+   "floor": "fqfwvfaff",
+   "type": "waypoint",
+   "x": 3438,
+   "y": 2757
+  },
+  {
+   "id": "nr06tnk6i",
+   "floor": "fqfwvfaff",
+   "type": "waypoint",
+   "x": 3552,
+   "y": 2764
+  },
+  {
+   "id": "nr08ol0sy",
+   "floor": "fqfwvfaff",
+   "type": "waypoint",
+   "x": 1889,
+   "y": 2543
+  },
+  {
+   "id": "nr08om3my",
+   "floor": "fqfwvfaff",
+   "type": "waypoint",
+   "x": 2284,
+   "y": 2543
+  },
+  {
+   "id": "nr08omngz",
+   "floor": "fqfwvfaff",
+   "type": "waypoint",
+   "x": 2887,
+   "y": 2543
+  },
+  {
+   "id": "nr08omoig",
+   "floor": "fqfwvfaff",
+   "type": "waypoint",
+   "x": 2187,
+   "y": 2543
+  },
+  {
+   "id": "nr08omki9",
+   "floor": "fqfwvfaff",
+   "type": "waypoint",
+   "x": 3068,
+   "y": 2543
+  },
+  {
+   "id": "nr08om37o",
+   "floor": "fqfwvfaff",
+   "type": "waypoint",
+   "x": 2887,
+   "y": 2478
+  },
+  {
+   "id": "nr0hwf05v",
+   "floor": "fqfwvfaff",
+   "type": "waypoint",
+   "x": 1819,
+   "y": 2543
+  },
+  {
+   "id": "nr0jm6r0o",
+   "floor": "fqfwvfaff",
+   "type": "waypoint",
+   "x": 1828,
+   "y": 2125
+  },
+  {
+   "id": "nr0l1qzbd",
+   "floor": "fqfwvfaff",
+   "type": "waypoint",
+   "x": 2028,
+   "y": 2003
+  },
+  {
+   "id": "nr0lz38yz",
+   "floor": "fqfwvfaff",
+   "type": "waypoint",
+   "x": 2135,
+   "y": 1873
+  },
+  {
+   "id": "nr0muohtu",
+   "floor": "fqfwvfaff",
+   "type": "waypoint",
+   "x": 2203,
+   "y": 1704
+  },
+  {
+   "id": "nr0nwol26",
+   "floor": "fqfwvfaff",
+   "type": "waypoint",
+   "x": 2202,
+   "y": 1592
+  },
+  {
+   "id": "nr0rnjazs",
+   "floor": "fqfwvfaff",
+   "type": "waypoint",
+   "x": 3291,
+   "y": 1588
+  },
+  {
+   "id": "nr0tesbq6",
+   "floor": "fqfwvfaff",
+   "type": "waypoint",
+   "x": 3291,
+   "y": 2543
+  },
+  {
+   "id": "nr0u19bu6",
+   "floor": "fqfwvfaff",
+   "type": "waypoint",
+   "x": 2874,
+   "y": 1590
+  },
+  {
+   "id": "nr16azslb",
+   "floor": "fqfwvfaff",
+   "type": "waypoint",
+   "x": 1435,
+   "y": 3192
+  },
+  {
+   "id": "nr17lbep5",
+   "floor": "fqfwvfaff",
+   "type": "waypoint",
+   "x": 1438,
+   "y": 3307
+  },
+  {
+   "id": "nt32pqawm",
+   "floor": "fqeuwbge1",
+   "x": 1452,
+   "y": 2865,
+   "type": "room",
+   "name": "Classroom",
+   "number": "G158",
+   "category": "class"
+  },
+  {
+   "id": "nt3fv3q8p",
+   "floor": "fqeuwbge1",
+   "x": 1484,
+   "y": 2805,
+   "type": "room",
+   "name": "Classroom",
+   "number": "G157",
+   "category": "class"
+  },
+  {
+   "id": "nt3my87sb",
+   "floor": "fqeuwbge1",
+   "x": 1994,
+   "y": 2904,
+   "type": "room",
+   "name": "Classroom",
+   "number": "G154",
+   "category": "class"
+  },
+  {
+   "id": "nt3tnjvyh",
+   "floor": "fqeuwbge1",
+   "x": 2039,
+   "y": 2462,
+   "type": "room",
+   "name": "Classroom",
+   "number": "G150",
+   "category": "class"
+  },
+  {
+   "id": "nt43hrjxl",
+   "floor": "fqeuwbge1",
+   "x": 2166,
+   "y": 2768,
+   "type": "room",
+   "name": "Classroom",
+   "number": "G152",
+   "category": "class"
+  },
+  {
+   "id": "nt4dcyrr9",
+   "floor": "fqeuwbge1",
+   "x": 2169,
+   "y": 2403,
+   "type": "room",
+   "name": "Classroom",
+   "number": "G151",
+   "category": "class"
+  },
+  {
+   "id": "nt4q0zci2",
+   "floor": "fqeuwbge1",
+   "x": 2374,
+   "y": 1651,
+   "type": "room",
+   "name": "Classroom",
+   "number": "G103",
+   "category": "class"
+  },
+  {
+   "id": "nt4vsiqko",
+   "floor": "fqeuwbge1",
+   "x": 2841,
+   "y": 1726,
+   "type": "room",
+   "name": "Classroom",
+   "number": "G106",
+   "category": "class"
+  },
+  {
+   "id": "nt55233ab",
+   "floor": "fqeuwbge1",
+   "x": 3216,
+   "y": 1809,
+   "type": "room",
+   "name": "Teacher Education",
+   "number": "G107",
+   "category": "office"
+  },
+  {
+   "id": "nt5v3c0hr",
+   "floor": "fqeuwbge1",
+   "x": 1377,
+   "y": 3707,
+   "type": "room",
+   "name": "South Restrooms",
+   "number": "",
+   "category": "amenity"
+  },
+  {
+   "id": "nt6cc2x8p",
+   "floor": "fqeuwbge1",
+   "x": 2276,
+   "y": 1888,
+   "type": "room",
+   "name": "Ground Floor Restrooms",
+   "number": "",
+   "category": "amenity"
+  },
+  {
+   "id": "nt6ue03ej",
+   "floor": "fqeuwbge1",
+   "type": "waypoint",
+   "x": 1239,
+   "y": 3665
+  },
+  {
+   "id": "nt6yknt89",
+   "floor": "fqeuwbge1",
+   "type": "waypoint",
+   "x": 1484,
+   "y": 3575
+  },
+  {
+   "id": "nt718mere",
+   "floor": "fqeuwbge1",
+   "type": "waypoint",
+   "x": 1490,
+   "y": 2863
+  },
+  {
+   "id": "nt718mtgn",
+   "floor": "fqeuwbge1",
+   "type": "waypoint",
+   "x": 1488,
+   "y": 2867
+  },
+  {
+   "id": "nt718mahb",
+   "floor": "fqeuwbge1",
+   "type": "waypoint",
+   "x": 1992,
+   "y": 2849
+  },
+  {
+   "id": "nt718mw8f",
+   "floor": "fqeuwbge1",
+   "type": "waypoint",
+   "x": 2087,
+   "y": 2846
+  },
+  {
+   "id": "nt718mnef",
+   "floor": "fqeuwbge1",
+   "type": "waypoint",
+   "x": 2090,
+   "y": 2467
+  },
+  {
+   "id": "nt718m4xv",
+   "floor": "fqeuwbge1",
+   "type": "waypoint",
+   "x": 2087,
+   "y": 2400
+  },
+  {
+   "id": "nt718mdhl",
+   "floor": "fqeuwbge1",
+   "type": "waypoint",
+   "x": 2369,
+   "y": 1802
+  },
+  {
+   "id": "nt718mwq3",
+   "floor": "fqeuwbge1",
+   "type": "waypoint",
+   "x": 2849,
+   "y": 1801
+  },
+  {
+   "id": "nt718mzt0",
+   "floor": "fqeuwbge1",
+   "type": "waypoint",
+   "x": 1376,
+   "y": 3579
+  },
+  {
+   "id": "nt718mbmt",
+   "floor": "fqeuwbge1",
+   "type": "waypoint",
+   "x": 2092,
+   "y": 1804
+  },
+  {
+   "id": "nt7ockxnq",
+   "floor": "fqeuwbge1",
+   "type": "waypoint",
+   "x": 1231,
+   "y": 3569
+  },
+  {
+   "id": "ntb2782m6",
+   "floor": "fqeuwbge1",
+   "type": "waypoint",
+   "x": 2276,
+   "y": 1803
+  }
+ ],
+ "edges": [
+  {
+   "a": "nqy6r31y8",
+   "b": "nqzpl4inu"
+  },
+  {
+   "a": "nqzpl4inu",
+   "b": "nqzt0l9it"
+  },
+  {
+   "a": "nqzt0l9it",
+   "b": "nqzuo787x"
+  },
+  {
+   "a": "nqzxadwxe",
+   "b": "nqzzv18d5"
+  },
+  {
+   "a": "nqzzv18d5",
+   "b": "nr051drg9"
+  },
+  {
+   "a": "nr051drg9",
+   "b": "nr06tnk6i"
+  },
+  {
+   "a": "sign-1",
+   "b": "nr08ol0sy"
+  },
+  {
+   "a": "nqjelz8kk",
+   "b": "nr08om3my"
+  },
+  {
+   "a": "nr08om3my",
+   "b": "nr08omngz"
+  },
+  {
+   "a": "nr08ol0sy",
+   "b": "nr08omoig"
+  },
+  {
+   "a": "nr08omoig",
+   "b": "nr08om3my"
+  },
+  {
+   "a": "nqks2v0k3",
+   "b": "nr08omoig"
+  },
+  {
+   "a": "nr08omngz",
+   "b": "nr08omki9"
+  },
+  {
+   "a": "nql3q1snt",
+   "b": "nr08omki9"
+  },
+  {
+   "a": "nqlrczvui",
+   "b": "nqzuo787x"
+  },
+  {
+   "a": "nqjtrvg05",
+   "b": "nr08om37o"
+  },
+  {
+   "a": "nr08om37o",
+   "b": "nr08omngz"
+  },
+  {
+   "a": "nqyvq27bw",
+   "b": "nqzzv18d5"
+  },
+  {
+   "a": "nqzuo787x",
+   "b": "nr0hwf05v"
+  },
+  {
+   "a": "nr0hwf05v",
+   "b": "nr08ol0sy"
+  },
+  {
+   "a": "nr0hwf05v",
+   "b": "nr0jm6r0o"
+  },
+  {
+   "a": "nr0jm6r0o",
+   "b": "nr0l1qzbd"
+  },
+  {
+   "a": "nr0l1qzbd",
+   "b": "nr0lz38yz"
+  },
+  {
+   "a": "nr0lz38yz",
+   "b": "nr0muohtu"
+  },
+  {
+   "a": "nr0muohtu",
+   "b": "nr0nwol26"
+  },
+  {
+   "a": "nr08omki9",
+   "b": "nr0tesbq6"
+  },
+  {
+   "a": "nr0tesbq6",
+   "b": "nqzxadwxe"
+  },
+  {
+   "a": "nr0rnjazs",
+   "b": "nr0tesbq6"
+  },
+  {
+   "a": "nr0nwol26",
+   "b": "nr0u19bu6"
+  },
+  {
+   "a": "nr0u19bu6",
+   "b": "nr0rnjazs"
+  },
+  {
+   "a": "nqp6odyup",
+   "b": "nr0u19bu6"
+  },
+  {
+   "a": "nqzpl4inu",
+   "b": "nr16azslb"
+  },
+  {
+   "a": "nr16azslb",
+   "b": "nr17lbep5"
+  },
+  {
+   "a": "nt32pqawm",
+   "b": "nt718mere"
+  },
+  {
+   "a": "nt718mere",
+   "b": "nt6yknt89"
+  },
+  {
+   "a": "nt3fv3q8p",
+   "b": "nt718mtgn"
+  },
+  {
+   "a": "nt718mtgn",
+   "b": "nt718mere"
+  },
+  {
+   "a": "nt3my87sb",
+   "b": "nt718mahb"
+  },
+  {
+   "a": "nt718mahb",
+   "b": "nt718mtgn"
+  },
+  {
+   "a": "nt718mw8f",
+   "b": "nt718mahb"
+  },
+  {
+   "a": "nt43hrjxl",
+   "b": "nt718mw8f"
+  },
+  {
+   "a": "nt3tnjvyh",
+   "b": "nt718mnef"
+  },
+  {
+   "a": "nt718mnef",
+   "b": "nt718mw8f"
+  },
+  {
+   "a": "nt4dcyrr9",
+   "b": "nt718m4xv"
+  },
+  {
+   "a": "nt718m4xv",
+   "b": "nt718mnef"
+  },
+  {
+   "a": "nt4q0zci2",
+   "b": "nt718mdhl"
+  },
+  {
+   "a": "nt4vsiqko",
+   "b": "nt718mwq3"
+  },
+  {
+   "a": "nt718mwq3",
+   "b": "nt718mdhl"
+  },
+  {
+   "a": "nt55233ab",
+   "b": "nt718mwq3"
+  },
+  {
+   "a": "nt718mzt0",
+   "b": "nt6yknt89"
+  },
+  {
+   "a": "nt5v3c0hr",
+   "b": "nt718mzt0"
+  },
+  {
+   "a": "nt718mbmt",
+   "b": "nt718m4xv"
+  },
+  {
+   "a": "nt718mzt0",
+   "b": "nt7ockxnq"
+  },
+  {
+   "a": "nt7ockxnq",
+   "b": "nt6ue03ej"
+  },
+  {
+   "a": "nt718mdhl",
+   "b": "ntb2782m6"
+  },
+  {
+   "a": "ntb2782m6",
+   "b": "nt718mbmt"
+  },
+  {
+   "a": "nt6cc2x8p",
+   "b": "ntb2782m6"
+  }
+ ],
+ "savedAt": "2026-10-27T15:04:12.536Z"
+}

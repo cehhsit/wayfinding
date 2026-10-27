@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2000" height="1200" viewBox="0 0 2000 1200">
+<rect width="2000" height="1200" fill="#F4F2EE"/>
+<defs><pattern id="hatch" width="16" height="16" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="16" stroke="#B9B3A8" stroke-width="5"/></pattern></defs>
+<text x="40" y="70" font-family="Arial, sans-serif" font-size="40" font-weight="bold" fill="#7a746b">MAIN HALL · FLOOR 1</text>
+<rect x="90" y="570" width="1810" height="60" fill="#FFFFFF"/>
+<rect x="90" y="150" width="90" height="420" fill="url(#hatch)" stroke="#4A4640" stroke-width="6"/>
+<text x="135.0" y="370.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#3b3732">Stairs</text>
+<rect x="113.0" y="565" width="44" height="10" fill="#FFFFFF"/>
+<rect x="180" y="150" width="230" height="420" fill="#FFFFFF" stroke="#4A4640" stroke-width="6"/>
+<text x="295.0" y="352.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" font-weight="bold" fill="#3b3732">101</text>
+<text x="295.0" y="388.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" fill="#6b655c">Admissions Office</text>
+<rect x="273.0" y="565" width="44" height="10" fill="#FFFFFF"/>
+<rect x="410" y="150" width="200" height="420" fill="#FFFFFF" stroke="#4A4640" stroke-width="6"/>
+<text x="510.0" y="352.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" font-weight="bold" fill="#3b3732">102</text>
+<text x="510.0" y="388.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" fill="#6b655c">Advising Center</text>
+<rect x="488.0" y="565" width="44" height="10" fill="#FFFFFF"/>
+<rect x="610" y="150" width="200" height="420" fill="#FFFFFF" stroke="#4A4640" stroke-width="6"/>
+<text x="710.0" y="352.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" font-weight="bold" fill="#3b3732">103</text>
+<text x="710.0" y="388.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" fill="#6b655c">Classroom</text>
+<rect x="688.0" y="565" width="44" height="10" fill="#FFFFFF"/>
+<rect x="810" y="150" width="120" height="420" fill="#E8F0F6" stroke="#4A4640" stroke-width="6"/>
+<text x="870.0" y="370.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#3b3732">Restrooms</text>
+<rect x="848.0" y="565" width="44" height="10" fill="#FFFFFF"/>
+<rect x="930" y="150" width="100" height="420" fill="#E2DED6" stroke="#4A4640" stroke-width="6"/>
+<line x1="945" y1="165" x2="1015" y2="555" stroke="#8a847a" stroke-width="3"/><line x1="1015" y1="165" x2="945" y2="555" stroke="#8a847a" stroke-width="3"/>
+<text x="980.0" y="370.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#3b3732">Elevator</text>
+<rect x="958.0" y="565" width="44" height="10" fill="#FFFFFF"/>
+<rect x="1030" y="150" width="420" height="420" fill="#FFFFFF" stroke="#4A4640" stroke-width="6"/>
+<text x="1240.0" y="352.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" font-weight="bold" fill="#3b3732">104</text>
+<text x="1240.0" y="388.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" fill="#6b655c">Lecture Hall</text>
+<rect x="1218.0" y="565" width="44" height="10" fill="#FFFFFF"/>
+<rect x="1450" y="150" width="250" height="420" fill="#FFFFFF" stroke="#4A4640" stroke-width="6"/>
+<text x="1575.0" y="352.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" font-weight="bold" fill="#3b3732">105</text>
+<text x="1575.0" y="388.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" fill="#6b655c">Computer Lab</text>
+<rect x="1553.0" y="565" width="44" height="10" fill="#FFFFFF"/>
+<rect x="1700" y="150" width="180" height="420" fill="#FFFFFF" stroke="#4A4640" stroke-width="6"/>
+<text x="1790.0" y="352.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#3b3732">106</text>
+<text x="1790.0" y="388.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#6b655c">Conference Room</text>
+<rect x="1768.0" y="565" width="44" height="10" fill="#FFFFFF"/>
+<rect x="90" y="630" width="400" height="420" fill="#FFFFFF" stroke="#4A4640" stroke-width="6"/>
+<text x="290.0" y="850.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" font-weight="bold" fill="#3b3732">Café</text>
+<rect x="268.0" y="625" width="44" height="10" fill="#FFFFFF"/>
+<rect x="490" y="630" width="250" height="420" fill="#FFFFFF" stroke="#4A4640" stroke-width="6"/>
+<text x="615.0" y="832.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" font-weight="bold" fill="#3b3732">110</text>
+<text x="615.0" y="868.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" fill="#6b655c">Student Services</text>
+<rect x="593.0" y="625" width="44" height="10" fill="#FFFFFF"/>
+<rect x="740" y="630" width="230" height="420" fill="#FFFFFF" stroke="#4A4640" stroke-width="6"/>
+<text x="855.0" y="832.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" font-weight="bold" fill="#3b3732">111</text>
+<text x="855.0" y="868.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" fill="#6b655c">Dean's Office</text>
+<rect x="833.0" y="625" width="44" height="10" fill="#FFFFFF"/>
+<rect x="1030" y="630" width="220" height="420" fill="#FFFFFF" stroke="#4A4640" stroke-width="6"/>
+<text x="1140.0" y="832.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" font-weight="bold" fill="#3b3732">112</text>
+<text x="1140.0" y="868.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" fill="#6b655c">IT Help Desk</text>
+<rect x="1118.0" y="625" width="44" height="10" fill="#FFFFFF"/>
+<rect x="1250" y="630" width="150" height="420" fill="#FFFFFF" stroke="#4A4640" stroke-width="6"/>
+<text x="1325.0" y="832.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#3b3732">113</text>
+<text x="1325.0" y="868.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#6b655c">Mail Room</text>
+<rect x="1303.0" y="625" width="44" height="10" fill="#FFFFFF"/>
+<rect x="1400" y="630" width="250" height="420" fill="#FFFFFF" stroke="#4A4640" stroke-width="6"/>
+<text x="1525.0" y="832.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" font-weight="bold" fill="#3b3732">114</text>
+<text x="1525.0" y="868.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" fill="#6b655c">Seminar Room</text>
+<rect x="1503.0" y="625" width="44" height="10" fill="#FFFFFF"/>
+<rect x="1650" y="630" width="250" height="420" fill="#FFFFFF" stroke="#4A4640" stroke-width="6"/>
+<text x="1775.0" y="832.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" font-weight="bold" fill="#3b3732">115</text>
+<text x="1775.0" y="868.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" fill="#6b655c">Faculty Lounge</text>
+<rect x="1753.0" y="625" width="44" height="10" fill="#FFFFFF"/>
+<rect x="970" y="630" width="60" height="420" fill="#FFFFFF"/>
+<rect x="820" y="1050" width="360" height="110" fill="#FBF7EC" stroke="#4A4640" stroke-width="6"/>
+<text x="1000.0" y="1115.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" font-weight="bold" fill="#3b3732">Main Lobby</text>
+<rect x="930" y="1150" width="140" height="14" fill="#F4F2EE"/>
+<text x="1000" y="1190" text-anchor="middle" font-family="Arial" font-size="24" fill="#6b655c">MAIN ENTRANCE</text>
+<rect x="1100" y="1060" width="70" height="90" fill="url(#hatch)" stroke="#4A4640" stroke-width="4"/>
+<text x="1135" y="1045" text-anchor="middle" font-family="Arial" font-size="18" fill="#6b655c">Grand Stair</text>
+<rect x="1880" y="570" width="20" height="60" fill="#F4F2EE"/>
+<text x="1950" y="608" text-anchor="middle" font-family="Arial" font-size="18" fill="#6b655c">EXIT</text>
+</svg>

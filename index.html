@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>Wayfinding</title>
+  <link rel="stylesheet" href="css/kiosk.css">
+  <!-- Optional embedded config (used when the app runs from a zip / file:// where fetch() is unavailable) -->
+  <script src="data/config.js"></script>
+</head>
+<body>
+  <div id="app" class="app">
+    <header class="topbar">
+      <div class="brand" id="brand">
+        <div class="brand-mark" id="brandMark"></div>
+        <div>
+          <div class="brand-title" id="siteName">Wayfinding</div>
+          <div class="brand-sub" id="siteSub">Tap a destination to get directions</div>
+        </div>
+      </div>
+      <div class="top-actions">
+        <button class="pill-toggle" id="accessBtn" aria-pressed="false">
+          <svg class="ico" viewBox="0 0 24 24"><circle cx="12" cy="4" r="2"/><path d="M10 7h3v5h4.5l3 6.2-1.8.9-2.5-5.1H11a1 1 0 0 1-1-1V7z"/><path d="M8.2 10.3l.6 2A4.5 4.5 0 1 0 15 18h2.1a6.5 6.5 0 1 1-8.9-7.7z"/></svg>
+          <span>Accessible route</span>
+        </button>
+        <div class="clock" id="clock"></div>
+      </div>
+    </header>
+
+    <main class="main">
+      <!-- Left panel: directory OR directions -->
+      <section class="panel" id="panel">
+        <div class="view" id="dirView">
+          <h1 class="panel-title">Where would you like to go?</h1>
+          <button class="search" id="searchBox">
+            <svg class="ico" viewBox="0 0 24 24"><path d="M10 3a7 7 0 0 1 5.6 11.2l5 5-1.4 1.4-5-5A7 7 0 1 1 10 3zm0 2a5 5 0 1 0 0 10 5 5 0 0 0 0-10z"/></svg>
+            <span id="searchText" class="placeholder">Search rooms, offices, services…</span>
+          </button>
+          <div class="chips" id="chips"></div>
+          <div class="list" id="list"></div>
+          <div class="keyboard hidden" id="keyboard"></div>
+        </div>
+
+        <div class="view hidden" id="routeView">
+          <button class="back" id="backBtn">
+            <svg class="ico" viewBox="0 0 24 24"><path d="M15.4 5.4L14 4l-8 8 8 8 1.4-1.4L8.8 12z"/></svg>
+            <span>New search</span>
+          </button>
+          <div class="dest-card" id="destCard"></div>
+          <div class="segments" id="segments"></div>
+          <ol class="steps" id="steps"></ol>
+        </div>
+      </section>
+
+      <!-- Map -->
+      <section class="mapwrap" id="mapwrap">
+        <svg id="map" class="map" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet">
+          <g id="world">
+            <image id="floorImg" x="0" y="0"></image>
+            <g id="roomLayer"></g>
+            <g id="routeLayer"></g>
+            <g id="markerLayer"></g>
+          </g>
+        </svg>
+        <div class="floor-tabs" id="floorTabs"></div>
+        <div class="zoom">
+          <button id="zoomIn" aria-label="Zoom in"><svg class="ico" viewBox="0 0 24 24"><path d="M11 5h2v6h6v2h-6v6h-2v-6H5v-2h6z"/></svg></button>
+          <button id="zoomOut" aria-label="Zoom out"><svg class="ico" viewBox="0 0 24 24"><path d="M5 11h14v2H5z"/></svg></button>
+          <button id="zoomFit" aria-label="Reset view"><svg class="ico" viewBox="0 0 24 24"><path d="M4 4h6v2H6v4H4zm10 0h6v6h-2V6h-4zM4 14h2v4h4v2H4zm14 0h2v6h-6v-2h4z"/></svg></button>
+        </div>
+        <div class="floor-banner hidden" id="floorBanner"></div>
+        <button class="next-btn hidden" id="nextBtn"></button>
+        <div class="legend">
+          <span><i class="lg-yah"></i>You are here</span>
+          <span><i class="lg-route"></i>Your route</span>
+          <span><i class="lg-dest"></i>Destination</span>
+        </div>
+      </section>
+    </main>
+
+    <!-- Setup overlay (shown when the sign location is unknown, or via a long-press on the logo) -->
+    <div class="overlay hidden" id="signPicker">
+      <div class="modal">
+        <h2>Choose this display's location</h2>
+        <p>This sets the “You are here” point for this screen. For a permanent setting, add <code>?sign=ID</code> to the URL in Appspace.</p>
+        <div class="sign-list" id="signList"></div>
+        <button class="btn-secondary" id="signCancel">Close</button>
+      </div>
+    </div>
+
+    <div class="overlay hidden" id="errorBox">
+      <div class="modal"><h2>Map unavailable</h2><p id="errorText"></p></div>
+    </div>
+  </div>
+
+  <script src="js/wf-core.js"></script>
+  <script src="js/kiosk.js"></script>
+</body>
+</html>

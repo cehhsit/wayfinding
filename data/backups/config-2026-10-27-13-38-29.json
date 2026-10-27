@@ -1,0 +1,1283 @@
+{
+ "version": 1,
+ "site": {
+  "name": "Demo Campus Wayfinding",
+  "subtitle": "Tap a destination to get directions",
+  "accent": "#782F40",
+  "accent2": "#CEB888",
+  "idleSeconds": 90,
+  "refreshMinutes": 15,
+  "defaultSign": "lobby-kiosk",
+  "showRoomDots": true,
+  "stairsFirst": true
+ },
+ "categories": [
+  {
+   "id": "office",
+   "name": "Offices",
+   "color": "#5B6C8F"
+  },
+  {
+   "id": "class",
+   "name": "Classrooms",
+   "color": "#2E7D6B"
+  },
+  {
+   "id": "lab",
+   "name": "Labs & Studios",
+   "color": "#8A5A9E"
+  },
+  {
+   "id": "service",
+   "name": "Student Services",
+   "color": "#C0602A"
+  },
+  {
+   "id": "amenity",
+   "name": "Amenities",
+   "color": "#2F7FB5"
+  },
+  {
+   "id": "entrance",
+   "name": "Entrances & Exits",
+   "color": "#6B7A3A"
+  }
+ ],
+ "floors": [
+  {
+   "id": "mh1",
+   "name": "Floor 1",
+   "building": "Main Hall",
+   "level": 1,
+   "image": "floors/main-hall-1.svg",
+   "width": 2000,
+   "height": 1200,
+   "pxPerFt": 5
+  },
+  {
+   "id": "mh2",
+   "name": "Floor 2",
+   "building": "Main Hall",
+   "level": 2,
+   "image": "floors/main-hall-2.svg",
+   "width": 2000,
+   "height": 1200,
+   "pxPerFt": 5
+  },
+  {
+   "id": "sa2",
+   "name": "Floor 2",
+   "building": "Science Annex",
+   "level": 2,
+   "image": "floors/science-annex-2.svg",
+   "width": 1600,
+   "height": 1000,
+   "pxPerFt": 5
+  }
+ ],
+ "nodes": [
+  {
+   "floor": "mh1",
+   "x": 100,
+   "y": 600,
+   "type": "waypoint",
+   "id": "n1"
+  },
+  {
+   "floor": "mh1",
+   "x": 135,
+   "y": 600,
+   "type": "waypoint",
+   "id": "n2"
+  },
+  {
+   "floor": "mh1",
+   "x": 290,
+   "y": 600,
+   "type": "waypoint",
+   "id": "n3"
+  },
+  {
+   "floor": "mh1",
+   "x": 510,
+   "y": 600,
+   "type": "waypoint",
+   "id": "n4"
+  },
+  {
+   "floor": "mh1",
+   "x": 615,
+   "y": 600,
+   "type": "waypoint",
+   "id": "n5"
+  },
+  {
+   "floor": "mh1",
+   "x": 710,
+   "y": 600,
+   "type": "waypoint",
+   "id": "n6"
+  },
+  {
+   "floor": "mh1",
+   "x": 855,
+   "y": 600,
+   "type": "waypoint",
+   "id": "n7"
+  },
+  {
+   "floor": "mh1",
+   "x": 870,
+   "y": 600,
+   "type": "waypoint",
+   "id": "n8"
+  },
+  {
+   "floor": "mh1",
+   "x": 980,
+   "y": 600,
+   "type": "waypoint",
+   "id": "n9"
+  },
+  {
+   "floor": "mh1",
+   "x": 1000,
+   "y": 600,
+   "type": "waypoint",
+   "label": "the Central Hallway",
+   "id": "n10"
+  },
+  {
+   "floor": "mh1",
+   "x": 1140,
+   "y": 600,
+   "type": "waypoint",
+   "id": "n11"
+  },
+  {
+   "floor": "mh1",
+   "x": 1240,
+   "y": 600,
+   "type": "waypoint",
+   "id": "n12"
+  },
+  {
+   "floor": "mh1",
+   "x": 1325,
+   "y": 600,
+   "type": "waypoint",
+   "id": "n13"
+  },
+  {
+   "floor": "mh1",
+   "x": 1525,
+   "y": 600,
+   "type": "waypoint",
+   "id": "n14"
+  },
+  {
+   "floor": "mh1",
+   "x": 1575,
+   "y": 600,
+   "type": "waypoint",
+   "id": "n15"
+  },
+  {
+   "floor": "mh1",
+   "x": 1775,
+   "y": 600,
+   "type": "waypoint",
+   "id": "n16"
+  },
+  {
+   "floor": "mh1",
+   "x": 1790,
+   "y": 600,
+   "type": "waypoint",
+   "id": "n17"
+  },
+  {
+   "floor": "mh1",
+   "x": 1890,
+   "y": 600,
+   "type": "waypoint",
+   "id": "n18"
+  },
+  {
+   "floor": "mh1",
+   "x": 135,
+   "y": 555,
+   "type": "connector",
+   "kind": "stairs",
+   "group": "west-stairs",
+   "label": "West Stairs",
+   "id": "n19"
+  },
+  {
+   "floor": "mh1",
+   "x": 295,
+   "y": 555,
+   "type": "room",
+   "name": "Admissions Office",
+   "number": "101",
+   "category": "service",
+   "id": "n20"
+  },
+  {
+   "floor": "mh1",
+   "x": 510,
+   "y": 555,
+   "type": "room",
+   "name": "Advising Center",
+   "number": "102",
+   "category": "service",
+   "id": "n21"
+  },
+  {
+   "floor": "mh1",
+   "x": 710,
+   "y": 555,
+   "type": "room",
+   "name": "Classroom",
+   "number": "103",
+   "category": "class",
+   "id": "n22"
+  },
+  {
+   "floor": "mh1",
+   "x": 870,
+   "y": 555,
+   "type": "room",
+   "name": "Restrooms",
+   "number": "",
+   "category": "amenity",
+   "id": "n23"
+  },
+  {
+   "floor": "mh1",
+   "x": 980,
+   "y": 555,
+   "type": "connector",
+   "kind": "elevator",
+   "group": "main-elevator",
+   "label": "Elevator",
+   "id": "n24"
+  },
+  {
+   "floor": "mh1",
+   "x": 1240,
+   "y": 555,
+   "type": "room",
+   "name": "Lecture Hall",
+   "number": "104",
+   "category": "class",
+   "id": "n25"
+  },
+  {
+   "floor": "mh1",
+   "x": 1575,
+   "y": 555,
+   "type": "room",
+   "name": "Computer Lab",
+   "number": "105",
+   "category": "lab",
+   "id": "n26"
+  },
+  {
+   "floor": "mh1",
+   "x": 1790,
+   "y": 555,
+   "type": "room",
+   "name": "Conference Room",
+   "number": "106",
+   "category": "office",
+   "id": "n27"
+  },
+  {
+   "floor": "mh1",
+   "x": 290,
+   "y": 645,
+   "type": "room",
+   "name": "Café",
+   "number": "",
+   "category": "amenity",
+   "id": "n28"
+  },
+  {
+   "floor": "mh1",
+   "x": 615,
+   "y": 645,
+   "type": "room",
+   "name": "Student Services",
+   "number": "110",
+   "category": "service",
+   "id": "n29"
+  },
+  {
+   "floor": "mh1",
+   "x": 855,
+   "y": 645,
+   "type": "room",
+   "name": "Dean's Office",
+   "number": "111",
+   "category": "office",
+   "id": "n30"
+  },
+  {
+   "floor": "mh1",
+   "x": 1140,
+   "y": 645,
+   "type": "room",
+   "name": "IT Help Desk",
+   "number": "112",
+   "category": "service",
+   "id": "n31"
+  },
+  {
+   "floor": "mh1",
+   "x": 1325,
+   "y": 645,
+   "type": "room",
+   "name": "Mail Room",
+   "number": "113",
+   "category": "service",
+   "id": "n32"
+  },
+  {
+   "floor": "mh1",
+   "x": 1525,
+   "y": 645,
+   "type": "room",
+   "name": "Seminar Room",
+   "number": "114",
+   "category": "class",
+   "id": "n33"
+  },
+  {
+   "floor": "mh1",
+   "x": 1775,
+   "y": 645,
+   "type": "room",
+   "name": "Faculty Lounge",
+   "number": "115",
+   "category": "office",
+   "id": "n34"
+  },
+  {
+   "floor": "mh1",
+   "x": 1000,
+   "y": 820,
+   "type": "waypoint",
+   "id": "n35"
+  },
+  {
+   "floor": "mh1",
+   "x": 1000,
+   "y": 1075,
+   "type": "waypoint",
+   "label": "the Main Lobby",
+   "id": "n36"
+  },
+  {
+   "id": "lobby-kiosk",
+   "floor": "mh1",
+   "x": 1000,
+   "y": 1125,
+   "type": "sign",
+   "name": "Main Lobby Kiosk",
+   "heading": 0
+  },
+  {
+   "floor": "mh1",
+   "x": 1135,
+   "y": 1105,
+   "type": "connector",
+   "kind": "stairs",
+   "group": "grand-stair",
+   "label": "Grand Stair",
+   "id": "n38"
+  },
+  {
+   "floor": "mh1",
+   "x": 1135,
+   "y": 1075,
+   "type": "waypoint",
+   "id": "n39"
+  },
+  {
+   "floor": "mh1",
+   "x": 1000,
+   "y": 1155,
+   "type": "room",
+   "name": "Main Entrance",
+   "number": "",
+   "category": "entrance",
+   "id": "n40"
+  },
+  {
+   "floor": "mh1",
+   "x": 1880,
+   "y": 600,
+   "type": "room",
+   "name": "East Exit",
+   "number": "",
+   "category": "entrance",
+   "id": "n41"
+  },
+  {
+   "floor": "mh2",
+   "x": 100,
+   "y": 600,
+   "type": "waypoint",
+   "id": "n42"
+  },
+  {
+   "floor": "mh2",
+   "x": 135,
+   "y": 600,
+   "type": "waypoint",
+   "id": "n43"
+  },
+  {
+   "floor": "mh2",
+   "x": 290,
+   "y": 600,
+   "type": "waypoint",
+   "id": "n44"
+  },
+  {
+   "floor": "mh2",
+   "x": 510,
+   "y": 600,
+   "type": "waypoint",
+   "id": "n45"
+  },
+  {
+   "floor": "mh2",
+   "x": 615,
+   "y": 600,
+   "type": "waypoint",
+   "id": "n46"
+  },
+  {
+   "floor": "mh2",
+   "x": 710,
+   "y": 600,
+   "type": "waypoint",
+   "id": "n47"
+  },
+  {
+   "floor": "mh2",
+   "x": 855,
+   "y": 600,
+   "type": "waypoint",
+   "id": "n48"
+  },
+  {
+   "floor": "mh2",
+   "x": 870,
+   "y": 600,
+   "type": "waypoint",
+   "id": "n49"
+  },
+  {
+   "floor": "mh2",
+   "x": 980,
+   "y": 600,
+   "type": "waypoint",
+   "id": "n50"
+  },
+  {
+   "floor": "mh2",
+   "x": 1000,
+   "y": 600,
+   "type": "waypoint",
+   "label": "the Atrium",
+   "id": "n51"
+  },
+  {
+   "floor": "mh2",
+   "x": 1140,
+   "y": 600,
+   "type": "waypoint",
+   "id": "n52"
+  },
+  {
+   "floor": "mh2",
+   "x": 1240,
+   "y": 600,
+   "type": "waypoint",
+   "id": "n53"
+  },
+  {
+   "floor": "mh2",
+   "x": 1325,
+   "y": 600,
+   "type": "waypoint",
+   "id": "n54"
+  },
+  {
+   "floor": "mh2",
+   "x": 1525,
+   "y": 600,
+   "type": "waypoint",
+   "id": "n55"
+  },
+  {
+   "floor": "mh2",
+   "x": 1575,
+   "y": 600,
+   "type": "waypoint",
+   "id": "n56"
+  },
+  {
+   "floor": "mh2",
+   "x": 1775,
+   "y": 600,
+   "type": "waypoint",
+   "id": "n57"
+  },
+  {
+   "floor": "mh2",
+   "x": 1790,
+   "y": 600,
+   "type": "waypoint",
+   "id": "n58"
+  },
+  {
+   "floor": "mh2",
+   "x": 1890,
+   "y": 600,
+   "type": "waypoint",
+   "id": "n59"
+  },
+  {
+   "floor": "mh2",
+   "x": 135,
+   "y": 555,
+   "type": "connector",
+   "kind": "stairs",
+   "group": "west-stairs",
+   "label": "West Stairs",
+   "id": "n60"
+  },
+  {
+   "floor": "mh2",
+   "x": 295,
+   "y": 555,
+   "type": "room",
+   "name": "Research Lab",
+   "number": "201",
+   "category": "lab",
+   "id": "n61"
+  },
+  {
+   "floor": "mh2",
+   "x": 510,
+   "y": 555,
+   "type": "room",
+   "name": "Faculty Offices",
+   "number": "202",
+   "category": "office",
+   "id": "n62"
+  },
+  {
+   "floor": "mh2",
+   "x": 710,
+   "y": 555,
+   "type": "room",
+   "name": "Classroom",
+   "number": "203",
+   "category": "class",
+   "id": "n63"
+  },
+  {
+   "floor": "mh2",
+   "x": 870,
+   "y": 555,
+   "type": "room",
+   "name": "Restrooms",
+   "number": "",
+   "category": "amenity",
+   "id": "n64"
+  },
+  {
+   "floor": "mh2",
+   "x": 980,
+   "y": 555,
+   "type": "connector",
+   "kind": "elevator",
+   "group": "main-elevator",
+   "label": "Elevator",
+   "id": "n65"
+  },
+  {
+   "floor": "mh2",
+   "x": 1240,
+   "y": 555,
+   "type": "room",
+   "name": "Library Reading Room",
+   "number": "204",
+   "category": "class",
+   "id": "n66"
+  },
+  {
+   "floor": "mh2",
+   "x": 1575,
+   "y": 555,
+   "type": "room",
+   "name": "Media Studio",
+   "number": "205",
+   "category": "lab",
+   "id": "n67"
+  },
+  {
+   "floor": "mh2",
+   "x": 1790,
+   "y": 555,
+   "type": "room",
+   "name": "Board Room",
+   "number": "206",
+   "category": "office",
+   "id": "n68"
+  },
+  {
+   "floor": "mh2",
+   "x": 290,
+   "y": 645,
+   "type": "room",
+   "name": "Graduate Studies",
+   "number": "210",
+   "category": "service",
+   "id": "n69"
+  },
+  {
+   "floor": "mh2",
+   "x": 615,
+   "y": 645,
+   "type": "room",
+   "name": "Counseling Lab",
+   "number": "211",
+   "category": "lab",
+   "id": "n70"
+  },
+  {
+   "floor": "mh2",
+   "x": 855,
+   "y": 645,
+   "type": "room",
+   "name": "Testing Center",
+   "number": "212",
+   "category": "service",
+   "id": "n71"
+  },
+  {
+   "floor": "mh2",
+   "x": 1140,
+   "y": 645,
+   "type": "room",
+   "name": "Conference Room A",
+   "number": "213",
+   "category": "office",
+   "id": "n72"
+  },
+  {
+   "floor": "mh2",
+   "x": 1325,
+   "y": 645,
+   "type": "room",
+   "name": "Department Office",
+   "number": "214",
+   "category": "office",
+   "id": "n73"
+  },
+  {
+   "floor": "mh2",
+   "x": 1525,
+   "y": 645,
+   "type": "room",
+   "name": "Study Lounge",
+   "number": "215",
+   "category": "amenity",
+   "id": "n74"
+  },
+  {
+   "floor": "mh2",
+   "x": 1775,
+   "y": 645,
+   "type": "room",
+   "name": "Project Room",
+   "number": "216",
+   "category": "class",
+   "id": "n75"
+  },
+  {
+   "floor": "mh2",
+   "x": 1000,
+   "y": 700,
+   "type": "connector",
+   "kind": "stairs",
+   "group": "grand-stair",
+   "label": "Grand Stair",
+   "id": "n76"
+  },
+  {
+   "floor": "mh2",
+   "x": 1960,
+   "y": 600,
+   "type": "connector",
+   "kind": "walkway",
+   "group": "skybridge",
+   "label": "Skybridge",
+   "id": "n77"
+  },
+  {
+   "id": "floor2-elevator-kiosk",
+   "floor": "mh2",
+   "x": 980,
+   "y": 650,
+   "type": "sign",
+   "name": "Floor 2 Elevator Lobby",
+   "heading": 180
+  },
+  {
+   "floor": "sa2",
+   "x": 110,
+   "y": 500,
+   "type": "waypoint",
+   "id": "n79"
+  },
+  {
+   "floor": "sa2",
+   "x": 290,
+   "y": 500,
+   "type": "waypoint",
+   "id": "n80"
+  },
+  {
+   "floor": "sa2",
+   "x": 340,
+   "y": 500,
+   "type": "waypoint",
+   "id": "n81"
+  },
+  {
+   "floor": "sa2",
+   "x": 670,
+   "y": 500,
+   "type": "waypoint",
+   "id": "n82"
+  },
+  {
+   "floor": "sa2",
+   "x": 820,
+   "y": 500,
+   "type": "waypoint",
+   "id": "n83"
+  },
+  {
+   "floor": "sa2",
+   "x": 960,
+   "y": 500,
+   "type": "waypoint",
+   "id": "n84"
+  },
+  {
+   "floor": "sa2",
+   "x": 1135,
+   "y": 500,
+   "type": "waypoint",
+   "id": "n85"
+  },
+  {
+   "floor": "sa2",
+   "x": 1280,
+   "y": 500,
+   "type": "waypoint",
+   "id": "n86"
+  },
+  {
+   "floor": "sa2",
+   "x": 1355,
+   "y": 500,
+   "type": "waypoint",
+   "id": "n87"
+  },
+  {
+   "floor": "sa2",
+   "x": 1490,
+   "y": 500,
+   "type": "waypoint",
+   "id": "n88"
+  },
+  {
+   "floor": "sa2",
+   "x": 290,
+   "y": 455,
+   "type": "room",
+   "name": "Chemistry Lab",
+   "number": "A201",
+   "category": "lab",
+   "id": "n89"
+  },
+  {
+   "floor": "sa2",
+   "x": 670,
+   "y": 455,
+   "type": "room",
+   "name": "Biology Lab",
+   "number": "A202",
+   "category": "lab",
+   "id": "n90"
+  },
+  {
+   "floor": "sa2",
+   "x": 960,
+   "y": 455,
+   "type": "room",
+   "name": "Prep Room",
+   "number": "A203",
+   "category": "lab",
+   "id": "n91"
+  },
+  {
+   "floor": "sa2",
+   "x": 1135,
+   "y": 455,
+   "type": "room",
+   "name": "Restrooms",
+   "number": "",
+   "category": "amenity",
+   "id": "n92"
+  },
+  {
+   "floor": "sa2",
+   "x": 1355,
+   "y": 455,
+   "type": "room",
+   "name": "Greenhouse Classroom",
+   "number": "A204",
+   "category": "class",
+   "id": "n93"
+  },
+  {
+   "floor": "sa2",
+   "x": 340,
+   "y": 545,
+   "type": "room",
+   "name": "Physics Lab",
+   "number": "A210",
+   "category": "lab",
+   "id": "n94"
+  },
+  {
+   "floor": "sa2",
+   "x": 820,
+   "y": 545,
+   "type": "room",
+   "name": "Makerspace",
+   "number": "A211",
+   "category": "lab",
+   "id": "n95"
+  },
+  {
+   "floor": "sa2",
+   "x": 1280,
+   "y": 545,
+   "type": "room",
+   "name": "Science Faculty Offices",
+   "number": "A212",
+   "category": "office",
+   "id": "n96"
+  },
+  {
+   "floor": "sa2",
+   "x": 40,
+   "y": 500,
+   "type": "connector",
+   "kind": "walkway",
+   "group": "skybridge",
+   "label": "Skybridge",
+   "id": "n97"
+  }
+ ],
+ "edges": [
+  {
+   "a": "n1",
+   "b": "n2"
+  },
+  {
+   "a": "n2",
+   "b": "n3"
+  },
+  {
+   "a": "n3",
+   "b": "n4"
+  },
+  {
+   "a": "n4",
+   "b": "n5"
+  },
+  {
+   "a": "n5",
+   "b": "n6"
+  },
+  {
+   "a": "n6",
+   "b": "n7"
+  },
+  {
+   "a": "n7",
+   "b": "n8"
+  },
+  {
+   "a": "n8",
+   "b": "n9"
+  },
+  {
+   "a": "n9",
+   "b": "n10"
+  },
+  {
+   "a": "n10",
+   "b": "n11"
+  },
+  {
+   "a": "n11",
+   "b": "n12"
+  },
+  {
+   "a": "n12",
+   "b": "n13"
+  },
+  {
+   "a": "n13",
+   "b": "n14"
+  },
+  {
+   "a": "n14",
+   "b": "n15"
+  },
+  {
+   "a": "n15",
+   "b": "n16"
+  },
+  {
+   "a": "n16",
+   "b": "n17"
+  },
+  {
+   "a": "n17",
+   "b": "n18"
+  },
+  {
+   "a": "n19",
+   "b": "n2"
+  },
+  {
+   "a": "n20",
+   "b": "n3"
+  },
+  {
+   "a": "n21",
+   "b": "n4"
+  },
+  {
+   "a": "n22",
+   "b": "n6"
+  },
+  {
+   "a": "n23",
+   "b": "n8"
+  },
+  {
+   "a": "n24",
+   "b": "n9"
+  },
+  {
+   "a": "n25",
+   "b": "n12"
+  },
+  {
+   "a": "n26",
+   "b": "n15"
+  },
+  {
+   "a": "n27",
+   "b": "n17"
+  },
+  {
+   "a": "n28",
+   "b": "n3"
+  },
+  {
+   "a": "n29",
+   "b": "n5"
+  },
+  {
+   "a": "n30",
+   "b": "n7"
+  },
+  {
+   "a": "n31",
+   "b": "n11"
+  },
+  {
+   "a": "n32",
+   "b": "n13"
+  },
+  {
+   "a": "n33",
+   "b": "n14"
+  },
+  {
+   "a": "n34",
+   "b": "n16"
+  },
+  {
+   "a": "n10",
+   "b": "n35"
+  },
+  {
+   "a": "n35",
+   "b": "n36"
+  },
+  {
+   "a": "lobby-kiosk",
+   "b": "n36"
+  },
+  {
+   "a": "n36",
+   "b": "n39"
+  },
+  {
+   "a": "n39",
+   "b": "n38"
+  },
+  {
+   "a": "n40",
+   "b": "lobby-kiosk"
+  },
+  {
+   "a": "n41",
+   "b": "n18"
+  },
+  {
+   "a": "n42",
+   "b": "n43"
+  },
+  {
+   "a": "n43",
+   "b": "n44"
+  },
+  {
+   "a": "n44",
+   "b": "n45"
+  },
+  {
+   "a": "n45",
+   "b": "n46"
+  },
+  {
+   "a": "n46",
+   "b": "n47"
+  },
+  {
+   "a": "n47",
+   "b": "n48"
+  },
+  {
+   "a": "n48",
+   "b": "n49"
+  },
+  {
+   "a": "n49",
+   "b": "n50"
+  },
+  {
+   "a": "n50",
+   "b": "n51"
+  },
+  {
+   "a": "n51",
+   "b": "n52"
+  },
+  {
+   "a": "n52",
+   "b": "n53"
+  },
+  {
+   "a": "n53",
+   "b": "n54"
+  },
+  {
+   "a": "n54",
+   "b": "n55"
+  },
+  {
+   "a": "n55",
+   "b": "n56"
+  },
+  {
+   "a": "n56",
+   "b": "n57"
+  },
+  {
+   "a": "n57",
+   "b": "n58"
+  },
+  {
+   "a": "n58",
+   "b": "n59"
+  },
+  {
+   "a": "n60",
+   "b": "n43"
+  },
+  {
+   "a": "n61",
+   "b": "n44"
+  },
+  {
+   "a": "n62",
+   "b": "n45"
+  },
+  {
+   "a": "n63",
+   "b": "n47"
+  },
+  {
+   "a": "n64",
+   "b": "n49"
+  },
+  {
+   "a": "n65",
+   "b": "n50"
+  },
+  {
+   "a": "n66",
+   "b": "n53"
+  },
+  {
+   "a": "n67",
+   "b": "n56"
+  },
+  {
+   "a": "n68",
+   "b": "n58"
+  },
+  {
+   "a": "n69",
+   "b": "n44"
+  },
+  {
+   "a": "n70",
+   "b": "n46"
+  },
+  {
+   "a": "n71",
+   "b": "n48"
+  },
+  {
+   "a": "n72",
+   "b": "n52"
+  },
+  {
+   "a": "n73",
+   "b": "n54"
+  },
+  {
+   "a": "n74",
+   "b": "n55"
+  },
+  {
+   "a": "n75",
+   "b": "n57"
+  },
+  {
+   "a": "n76",
+   "b": "n51"
+  },
+  {
+   "a": "n77",
+   "b": "n59"
+  },
+  {
+   "a": "floor2-elevator-kiosk",
+   "b": "n50"
+  },
+  {
+   "a": "n79",
+   "b": "n80"
+  },
+  {
+   "a": "n80",
+   "b": "n81"
+  },
+  {
+   "a": "n81",
+   "b": "n82"
+  },
+  {
+   "a": "n82",
+   "b": "n83"
+  },
+  {
+   "a": "n83",
+   "b": "n84"
+  },
+  {
+   "a": "n84",
+   "b": "n85"
+  },
+  {
+   "a": "n85",
+   "b": "n86"
+  },
+  {
+   "a": "n86",
+   "b": "n87"
+  },
+  {
+   "a": "n87",
+   "b": "n88"
+  },
+  {
+   "a": "n89",
+   "b": "n80"
+  },
+  {
+   "a": "n90",
+   "b": "n82"
+  },
+  {
+   "a": "n91",
+   "b": "n84"
+  },
+  {
+   "a": "n92",
+   "b": "n85"
+  },
+  {
+   "a": "n93",
+   "b": "n87"
+  },
+  {
+   "a": "n94",
+   "b": "n81"
+  },
+  {
+   "a": "n95",
+   "b": "n83"
+  },
+  {
+   "a": "n96",
+   "b": "n86"
+  },
+  {
+   "a": "n97",
+   "b": "n79"
+  }
+ ],
+ "savedAt": "2026-10-27T13:38:29.943Z"
+}

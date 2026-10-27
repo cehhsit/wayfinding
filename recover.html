@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Wayfinding: recover saved maps</title>
+<style>
+  body { font: 15px/1.5 "Segoe UI", Roboto, Arial, sans-serif; max-width: 760px; margin: 40px auto; padding: 0 16px; color: #1d1b18; background: #f5f3ef; }
+  h1 { font-size: 22px; margin-bottom: 4px; }
+  .card { background: #fff; border: 1px solid #e2ded6; border-radius: 10px; padding: 14px 16px; margin: 12px 0; display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+  .card small { color: #6b665e; display: block; }
+  button { font: inherit; padding: 8px 14px; border-radius: 6px; border: 1px solid #782F40; background: #782F40; color: #fff; cursor: pointer; white-space: nowrap; }
+  .warn { background: #fdf3e6; border-left: 4px solid #B8561B; padding: 12px 14px; border-radius: 6px; }
+  code { background: #ece8e1; padding: 1px 5px; border-radius: 3px; }
+</style>
+</head>
+<body>
+<h1>Recover saved wayfinding maps</h1>
+<p>This page lists every map the editor has stored <b>in this browser</b>. Open it in the same browser you used for <code>admin.html</code>. Download a copy, then load it in the editor with <b>Open…</b> and click <b>Save</b>.</p>
+<div id="out">Looking…</div>
+<script>
+(function () {
+  var out = document.getElementById('out');
+  function summary(cfg) {
+    var rooms = (cfg.nodes || []).filter(function (n) { return n.type === 'room'; }).length;
+    var signs = (cfg.nodes || []).filter(function (n) { return n.type === 'sign'; }).length;
+    var floors = (cfg.floors || []).map(function (f) { return (f.building ? f.building + ' ' : '') + f.name; });
+    var demo = (cfg.site && cfg.site.name === 'Demo Campus Wayfinding');
+    return (cfg.site && cfg.site.name || 'Untitled') + (demo ? ' (demo map)' : '') + ': ' + floors.length + ' floor(s) [' + floors.join(', ') + '], ' + rooms + ' rooms, ' + signs + ' signs';
+  }
+  function dl(cfg, name) {
+    var a = document.createElement('a');
+    a.href = URL.createObjectURL(new Blob([JSON.stringify(cfg)], { type: 'application/json' }));
+    a.download = name; document.body.appendChild(a); a.click();
+  }
+  var req;
+  try { req = indexedDB.open('wayfinding-editor', 1); } catch (e) { out.textContent = 'This browser blocks storage for local files.'; return; }
+  req.onupgradeneeded = function () { req.result.createObjectStore('kv'); };
+  req.onerror = function () { out.textContent = 'Could not open browser storage: ' + req.error; };
+  req.onsuccess = function () {
+    var db = req.result, st = db.transaction('kv').objectStore('kv');
+    var items = [];
+    var g1 = st.get('draft'), g2 = st.get('history');
+    g1.onsuccess = function () { if (g1.result && g1.result.cfg) items.push({ label: 'Latest draft', at: g1.result.savedAt, cfg: g1.result.cfg }); };
+    g2.onsuccess = function () {
+      (g2.result || []).forEach(function (h, i) { items.push({ label: 'Backup #' + (i + 1) + ' (' + h.reason + ')', at: h.savedAt, cfg: h.cfg }); });
+      render();
+    };
+    function render() {
+      if (!items.length) {
+        out.innerHTML = '<div class="warn"><b>Nothing is stored in this browser.</b><br>' +
+          'If you made edits here earlier, the browser has deleted its saved site data. On managed computers this is usually a policy that ' +
+          '<b>clears browsing data when Edge closes</b>. Check <code>edge://settings/clearBrowsingDataOnClose</code> and <code>edge://policy</code> ' +
+          '(look for <code>ClearBrowsingDataOnExit</code> or <code>ClearCachedImagesAndFilesOnExit</code>). Also make sure you\'re in the same Edge profile and not an InPrivate window.<br><br>' +
+          'Going forward, use <b>Save</b> in the editor: it writes your map to a file on your computer that browser cleanups can\'t touch.</div>';
+        return;
+      }
+      out.innerHTML = '';
+      items.forEach(function (it, i) {
+        var d = document.createElement('div'); d.className = 'card';
+        d.innerHTML = '<div><b>' + it.label + '</b><small>' + new Date(it.at).toLocaleString() + '</small><small>' + summary(it.cfg).replace(/</g, '&lt;') + '</small></div>';
+        var b = document.createElement('button'); b.textContent = 'Download';
+        b.onclick = function () { dl(it.cfg, 'recovered-map-' + new Date(it.at).toISOString().slice(0, 16).replace(/[:T]/g, '-') + '.wayfinding.json'); };
+        d.appendChild(b); out.appendChild(d);
+      });
+    }
+  };
+})();
+</script>
+</body>
+</html>
